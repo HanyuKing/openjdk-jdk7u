@@ -1,0 +1,9 @@
+make[2]: Entering directory `/usr/java/openjdk/jdk7u/jdk/make/tools/freetypecheck'
+/bin/mkdir -p /usr/java/openjdk/jdk7u/build/linux-amd64/btbins
+rm -f /usr/java/openjdk/jdk7u/build/linux-amd64/btbins/freetype_versioncheck
+/usr/bin/gcc  -I/usr/include -I/usr/include/freetype2 -DREQUIRED_FREETYPE_VERSION=2.3.0 -o /usr/java/openjdk/jdk7u/build/linux-amd64/btbins/freetype_versioncheck freetypecheck.c -L/usr/lib -Wl,-rpath -Wl,/usr/lib -lfreetype 
+/usr/java/openjdk/jdk7u/build/linux-amd64/btbins/freetype_versioncheck
+Required version of freetype: 2.3.0
+Detected freetype headers: 2.4.11
+Detected freetype library: 2.4.11
+make[2]: Leaving directory `/usr/java/openjdk/jdk7u/jdk/make/tools/freetypecheck'
